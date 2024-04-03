@@ -80,6 +80,7 @@ input {
   flex-direction: column;
   gap: 3.2rem;
   align-items: center;
+  height: 80vh;
 }
 
 .actions button,
