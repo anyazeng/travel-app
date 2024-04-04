@@ -30,7 +30,7 @@ export default function App() {
   function handleToggleItem(id) {
     setItems((items) =>
       items.map((item) =>
-        item.id === id ? { ...item, packed: !item.pakced } : item
+        item.id === id ? { ...item, packed: !item.packed } : item
       )
     );
   }
@@ -45,7 +45,7 @@ export default function App() {
         onDeleteItem={handleDeleteItem}
         onToggleItem={handleToggleItem}
       />
-      <Stats />
+      <Stats items={items} />
     </div>
   );
 }
